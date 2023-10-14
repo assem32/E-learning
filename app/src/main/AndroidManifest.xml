@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Learning"
+        tools:targetApi="31">
+        <activity
+            android:name=".splash.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.auth.StudentOrProf"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.auth.LoginScreen"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.auth.SignUp"
+            android:exported="false"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.instructor.AllCourses"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.instructor.AddCourse"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.instructor.CourseDetails"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.instructor.PDFViewer"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.instructor.CreateQuiz"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.student.StudentHome"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.student.StudentDetails"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.student.QuizsPage"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.student.SolveQuiz"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.instructor.GenerateCode"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.student.Chat"
+            android:exported="false"/>
+        <activity
+            android:name=".ui.instructor.Grade"
+            android:exported="false"/>
+    </application>
+
+</manifest>
